@@ -1,0 +1,65 @@
+# Made by CrookedDog 09.11.2023
+
+import requests
+import telebot
+from telebot import types
+
+API_KEY = 'API-WEATHER'
+bot = telebot.TeleBot('TELEGRAM-BOT-TOKEN')
+
+
+@bot.message_handler(commands=['start'])
+def start_message(message):
+
+    key = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    btn1 = types.KeyboardButton('Узнать погоду')
+    btn2 = types.KeyboardButton('Поддержка')
+    btn3 = types.KeyboardButton('Другие боты')
+    key.add(btn1, btn2, btn3)
+    bot.send_message(message.chat.id, 'Привет! Я бот, который подскажет тебе погоду', reply_markup=key)
+
+
+@bot.message_handler(content_types=['text'])
+def callback(message):
+    if message.text == "Поддержка":
+
+        bottom = types.InlineKeyboardMarkup()
+        btn = types.InlineKeyboardButton(text='Поддержка', url='https://web.telegram.org/k/#@alonofyou')
+        bottom.add(btn)
+        bot.send_message(message.chat.id, 'Если при работе с ботом у вас возникли трудности\n'
+                                          'Пишите сюда', reply_markup=bottom)
+
+    if message.text == "Узнать погоду":
+
+        answer2 = bot.send_message(message.chat.id, 'Введите название города')
+        bot.register_next_step_handler(answer2, get_weather)
+
+    if message.text == 'Другие боты':
+
+        bot.send_message(message.chat.id, 'Вот список некоторых наших ботов\n'
+                                          'Далше идет перечесление ботов\n'
+                                          'Более подробная информация '+' [на нашем сайте](https://web.telegram.org/k/#@alonofyou)', parse_mode='Markdown')
+
+
+def get_weather(message):
+
+    city = message.text
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric&lang=ru'
+    response = requests.get(url)
+    data = response.json()
+
+    if data['cod'] == 200:
+        weather_description = data['weather'][0]['description']
+        temperature = data['main']['temp']
+        humidity = data['main']['humidity']
+        wind_speed = data['wind']['speed']
+        weather_info = (f'Сейчас в городе {city} {weather_description}\n'
+                        f'Температура: {temperature}°C\n'
+                        f'Влажность: {humidity}%\n'
+                        f'Скорость ветра: {wind_speed} м/c')
+        bot.send_message(message.chat.id, weather_info)
+    else:
+        bot.send_message(message.chat.id, 'Извините, я не могу найти информацию о данном городе.')
+
+
+bot.polling(none_stop=True, interval=0)
