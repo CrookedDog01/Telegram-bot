@@ -1,0 +1,181 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+html{
+    overflow-x:hidden;
+}
+a{
+    color:#fff ;
+    text-decoration: none;
+}
+a:hover{
+    color: #C89106;
+}
+.panel{
+    position: fixed;
+    width: 1920px;
+    height: 95px;
+    background: #222222;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin-top: 27px;
+    margin-left: 41px;
+    margin-bottom: 27px;
+    
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.menu{
+    position: absolute;
+    text-align: center;
+    margin-left: 120px;
+    width: 720px;
+    height: 29px;
+    left: 416px;
+    top: 36px;
+}
+.menu-2{
+    margin-left: 40px;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    line-height: 29px;
+    color: #fff;
+    text-decoration: #fff;
+}
+
+.icon{
+    margin-top: 32px;
+    margin-left: 1622px;
+    margin-right: 172px;
+    margin-bottom: 22px;
+    padding: 0px;
+}
+
+.icon-text{
+    float: right;
+    margin-top: 5px;
+    margin-right: 30px;
+
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.map{
+    float: left;
+    margin-top: 175px;
+    margin-left: 66px;
+}
+
+.ofice{
+    float: left;
+    margin-top: 224px;
+    margin-left: 56px;
+    margin-right: 328px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.ofice-text{
+    margin-left: 71px;
+    margin-top: 14px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.contact{
+    float: left;
+    margin-top: 64px;
+    margin-left: 56px;
+    margin-right: 352px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.contact-tel{
+    margin-left: 71px;
+    margin-top: 14px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.contact-mail{
+    margin-left: 71px;
+    margin-top: 14px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.footer-bg{
+    float: left;
+    margin-top: 115px;
+    width: 1920px;
+    height: 159px;
+    background: #222;
+}
+
+.footer-name{
+    float: left;
+    margin-top: 38px;
+    margin-left: 38px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.footer-list{
+    padding-top: 50px;
+    margin-right: 300px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.delevoper{
+    margin-top: -20px;
+    margin-left: -50px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}

@@ -1,0 +1,334 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+html{
+    overflow-x:hidden;
+}
+a:hover{
+    color: #C89106;
+}
+.panel{
+    position: fixed;
+    width: 1920px;
+    height: 95px;
+    background: #222222;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin-top: 27px;
+    margin-left: 41px;
+    margin-bottom: 27px;
+    
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.menu{
+    position: absolute;
+    text-align: center;
+    margin-left: 120px;
+    width: 720px;
+    height: 29px;
+    left: 416px;
+    top: 36px;
+}
+.menu-2{
+    margin-left: 40px;
+    font-family: 'Ubuntu';
+    font-size: 25px;
+    line-height: 29px;
+    color: #fff;
+    text-decoration: #fff;
+}
+
+.icon{
+    margin-top: 32px;
+    margin-left: 1622px;
+    margin-right: 172px;
+    margin-bottom: 22px;
+    padding: 0px;
+}
+
+.icon-text{
+    float: right;
+    margin-top: 5px;
+    margin-right: 30px;
+
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.section{
+    position: absolute;
+    width: 1920px;
+    height: 95px;
+    left: 0px;
+    top: 800px;
+    background: #222222;
+}
+
+.icon-2{
+    margin-left: 38px;
+    margin-top: 33px;
+}
+
+.icon-text-2{
+    float: right;
+    margin-right: 1740px;
+    margin-top: 5px;
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+}
+
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.buttom{
+    padding-top: 17px;
+    float: right;
+    margin-right: 27px;
+    margin-top: -53px;
+    width: 220px;
+    height: 30px;
+    left: 1193px;
+    top: 825px;
+    text-align: center;
+    background: #06C86B;
+    border-radius: 10px;
+}
+
+.buttom-text{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.section-2-logo{
+    margin-top: 150px; 
+    margin-left: 41px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.section-2-text{
+    margin-top: 20px;
+    margin-left: 75px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.section-2-text-2{
+    margin-top: 20px;
+    margin-left: 122px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+
+.img-1{
+    float: right;
+    margin-top: -280px;
+    margin-right: 347px;
+    z-index: 1;
+}
+
+.img-2{
+    float: right;
+    margin-top: -40px;
+    margin-right: -700px;
+    z-index: 2;
+}
+
+.section-2-line{
+    float: left;
+    margin-top: 400px;
+    margin-left: -50px;
+    width: 1920px;
+    height: 95px;
+    background: #222;
+}
+
+.section-3-name{
+    float: left;
+    margin-top: 60px;
+    margin-left: 41px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.section-3-text{
+    float: left;
+    margin-top: 110px;
+    margin-left: -200px;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+
+.section-3-line{
+    margin-top: 100px;
+    width: 1920x;
+    height: 95px;
+    background: #222;
+}
+
+.section-4-name{
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.section-4-text{
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+
+.form-name{
+    text-align: center;
+    margin-top: 95px;
+    margin-left: -342px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+
+.input-1{
+    float: right;
+    margin-right: 742px;
+    margin-top: -20px;
+}
+
+.form-surfname{
+    text-align: center;
+    margin-top: 33px;
+    margin-left: -286px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+
+.input-2{
+    float: right;
+    margin-right: 744px;
+    margin-top: -20px;
+}
+
+.form-email{
+    text-align: center;
+    margin-top: 33px;
+    margin-left: -319px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+}
+
+.input-3{
+    float: right;
+    margin-right: 744px;
+    margin-top: -20px;
+}
+
+.submit{
+    margin-left: 930px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.footer-bg{
+    margin-top: 286px;
+    width: 1920px;
+    height: 159px;
+    background: #222;
+}
+
+.footer-name{
+    float: left;
+    margin-top: 38px;
+    margin-left: 38px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #C89106;
+}
+
+.footer-list{
+    padding-top: 50px;
+    margin-right: 300px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.delevoper{
+    margin-top: -20px;
+    margin-left: -50px;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+}
